@@ -1,13 +1,56 @@
-const choice =["paper", "sicissor", "stone"]
-console.log(choice[0], choice[1]);
+// bringimg the HTML tags
+const runBtn = document.getElementsByClassName("run-btn");
+const result = document.getElementsByClassName("result-comment");
+let select = document.querySelector("select");
+console.log(select)
+let comment = document.getElementsByClassName("result-comment")
+
+// select.addEventListener("change", ()=>{
+//     comment.innerText = select.options[select.selectedIndex].text
+//     console.log(select.selectedIndex);
+// });
+// function PlayerSelectedValue(){
+//    SelectedValue = select.onchange('')
+//     console.log(selectedValue.value)
+// }
 
 
-let userChoice = "";
-if (userChoice === choice[0]){
-    console.log(paper)
-}else{
-    console.log("Please chopice an option")
-}
+
+
+// globale variables
+const choices = ["Paper", "Rock", "Scissors"];
+let computerChoice = null;
+let playerChoice = null;
+
+
+// computer choice 
+ const randomChoice =(arr)=>{
+    const randomIndex = Math.floor(Math.random() * arr.length);
+      computerChoice = randomIndex;
+      console.log(computerChoice);
+ }
+ randomChoice(choices);
+
+
+ // player choice
+
+//  const playrSelection = (){
+
+
+//  }
+
+
+
+// const choice =["paper", "sicissor", "stone"]
+// console.log(choice[0], choice[1]);
+
+
+// let userChoice = "";
+// if (userChoice === choice[0]){
+//     console.log(paper)
+// }else{
+//     console.log("Please chopice an option")
+// }
 
 // computerChooses()
 // compareChoices
